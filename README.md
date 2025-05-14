@@ -1,15 +1,10 @@
 <div align="center">
-  <img src="/docs/images//bazaar-logo.png" alt="logo" width="200"  height="auto" />
   <br/>
-  <h3><b>Bazaar Auction Marketplace</b></h3>
+  <h3><b> Auction Marketplace</b></h3>
     <p>
         <b>📢 The Open Source Ad Auction Marketplace</b>
     </p>
-    <p>
-        <a href="https://github.com/hendurhance/bazaar/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
-        ·
-        <a href="https://github.com/hendurhance/bazaar/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
-    </p>
+    
 </div>
 
 > If you are here for the nitty-gritty details, you can check out the **[technical documentation](/docs/TECHNICAL_DOCUMENTATION.md)** for the system design, architecture, and design patterns used in the application. You can also check out the **[features](/docs/FEATURES.md)** page for a detailed list of features, and screenshots with key highlights, and live demo.
