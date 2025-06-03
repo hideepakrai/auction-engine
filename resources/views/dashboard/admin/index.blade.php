@@ -42,7 +42,7 @@
                 <div class="card-body">
                   <div class="d-flex">
                     <div class="mt-2">
-                      <h6 class="">Total Ads</h6>
+                      <h6 class="">Total Auctions</h6>
                       <h2 class="mb-0 number-font">{{ numbers_to_human($metrics['total_ads']['total']) }}</h2>
                     </div>
                     <div class="ms-auto">
@@ -110,7 +110,7 @@
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Bid & Ad Analytics</h3>
+              <h3 class="card-title">Bid & Auction Analytics</h3>
             </div>
             <div class="card-body">
               <div class="d-flex mx-auto text-center justify-content-center mb-4">
