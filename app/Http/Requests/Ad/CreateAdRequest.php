@@ -37,6 +37,7 @@ class CreateAdRequest extends FormRequest
             'country' => ['required', 'exists:countries,iso2'],
             'state' => ['required', 'exists:states,code'],
             'city' => ['nullable', 'string'],
+            'address' => ['nullable', 'string'],
             'seller_name' => ['required', 'string', 'max:255'],
             'seller_email' => ['required', 'email', 'max:255'],
             'seller_mobile' => ['required', 'string', 'max:15', 'regex:/^([0-9\s\-\+\(\)]*)$/', 'min:10'],

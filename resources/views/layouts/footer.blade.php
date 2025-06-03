@@ -48,8 +48,8 @@
                     <div class="footer-item">
                         <a href="{{ route('home') }}"><img alt="image" src="/assets/images/bg/footer-logo2.png"></a>
                         <ul class="address-list">
-                            <li><a href="#">61 Oxford Street, London, UK.</a></li>
-                            <li><a href="tel:+1234567890">Phone: +1 234 567 890 /  +1 234 567 890</a></li>
+                            <li><a href="#">105,Mohan Nagar, Ramnagariya, Jaipur 302017</a></li>
+                            <li><a href="tel:+1234567890">Phone: +91 72210 47383 /  +91 97820 94191</a></li>
                             <li><a href="/cdn-cgi/l/email-protection#00000000000000000">Email:
                                     <span class="__cf_email__"
                                         data-cfemail="00000000000000000000">[email&#160;protected]</span></a>
@@ -64,19 +64,9 @@
         <div class="container">
             <div class="row d-flex align-items-center g-4">
                 <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
-                    <p>Built with <i class="bi bi-heart-fill"></i> by <a href="https://github.com/hendurhance">Endurance</a></p>
+                    <p>Built with <i class="bi bi-heart-fill"></i> by <a href="https://codifiedweb.com">CodifiedWeb</a></p>
                 </div>
-                <div
-                    class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center flex-sm-nowrap flex-wrap">
-                    <p class="d-sm-flex d-none">We Accepts:</p>
-                    <ul class="footer-logo-list">
-                        <li><a href="#"><img alt="image" src="/assets/images/bg/footer-pay1.png"></a></li>
-                        <li><a href="#"><img alt="image" src="/assets/images/bg/footer-pay2.png"></a></li>
-                        <li><a href="#"><img alt="image" src="/assets/images/bg/footer-pay3.png"></a></li>
-                        <li><a href="#"><img alt="image" src="/assets/images/bg/footer-pay4.png"></a></li>
-                        <li><a href="#"><img alt="image" src="/assets/images/bg/footer-pay5.png"></a></li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>
