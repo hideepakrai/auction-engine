@@ -13,7 +13,7 @@
                     <div class="total-tag">
                         <img src="assets/images/bg/total-tag.png" alt="">
                         <h6>Total Raised</h6>
-                        <h5>$45,390.00</h5>
+                        <h5>₹45,390.00</h5>
                     </div>
                     <img src="assets/images/bg/about-img.png" class="img-fluid about-img wow fadeInUp"
                         data-wow-duration="1.5s" data-wow-delay=".2s" alt="about-img"

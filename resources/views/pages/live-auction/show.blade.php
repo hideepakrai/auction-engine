@@ -62,7 +62,7 @@
                     {{-- div for report ad button --}}
                     <div class="row d-flex mb-4">
                         <div class="ad-listing-item col-12">
-                            <span> If you find this ad inappropriate, please report it to us.</span>
+                            <span> If you find this auction inappropriate, please report it to us.</span>
                             <a href="{{ route('auction-details.report', $ad->slug) }}" class="text-danger fw-bold"><i class="bi bi-exclamation-circle-fill"></i> Report Ad</a>
                         </div>
                     </div>
@@ -90,15 +90,15 @@
                     <x-alert type="dark" icon="bi bi-exclamation-circle-fill">
                         @if($ad->expired())
                         <p class="text-dark mb-0">
-                            This ad listing has expired. You can no longer place a bid on this auction. Try checking out other auctions at <strong><a class="text-gray" href="{{ route('live-auction') }}">live auctions</a></strong> page.
+                            This auction listing has expired. You can no longer place a bid on this auction. Try checking out other auctions at <strong><a class="text-gray" href="{{ route('live-auction') }}">live auctions</a></strong> page.
                         </p>
                         @elseif($ad->upcoming())
                         <p class="text-dark mb-0">
-                            This ad listing is yet to start. You can not place a bid on this auction yet. Try checking out other auctions at <strong><a href="{{ route('live-auction') }}">live auctions</a></strong> page.
+                            This auction listing is yet to start. You can not place a bid on this auction yet. Try checking out other auctions at <strong><a href="{{ route('live-auction') }}">live auctions</a></strong> page.
                         </p>
                         @else
                         <p class="text-dark mb-0">
-                            This ad listing has been closed. You can no longer place a bid on this auction. Try checking out other auctions at <strong><a href="{{ route('live-auction') }}">live auctions</a></strong> page.
+                            This auction listing has been closed. You can no longer place a bid on this auction. Try checking out other auctions at <strong><a href="{{ route('live-auction') }}">live auctions</a></strong> page.
                         </p>
                         @endif
                     </x-alert>

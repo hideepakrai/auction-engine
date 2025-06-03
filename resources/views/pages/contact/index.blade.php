@@ -17,7 +17,7 @@
                     </div>
                     <div class="text">
                         <h4>Location</h4>
-                        <p>61 Oxford Street, London, UK</p>
+                        <p>105,Mohan Nagar, Jaipur,India</p>
                     </div>
                 </div>
             </div>
@@ -30,8 +30,8 @@
                     </div>
                     <div class="text">
                         <h4>Phone</h4>
-                        <a href="tel:+12345678906">+1 234 567 890</a>
-                        <a href="tel:+12345678906">+1 234 567 8906</a>
+                        <a href="tel:+917221047383">+91 72210 47383</a>
+                        <a href="tel:+919782094191">+91 97820 94191</a>
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@
                     </div>
                     <div class="text">
                         <h4>Email</h4>
-                        <a href="mailto:support@example.com">support@example.com</a>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="mailto:support@example.com">support@auctionengine.com</a>
+                        <a href="mailto:info@example.com">info@auctionengine.com</a>
                     </div>
                 </div>
             </div>
@@ -102,9 +102,11 @@
                 <div class="map-area wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s"
                     style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6255252.31904332!2d-106.08810052683293!3d40.04590513383155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1650355365902!5m2!1sen!2sbd"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d183.4173184844868!2d75.87156928792834!3d26.82225956220898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc83cb119dd3f%3A0x65caf1f114df3646!2sRVCC%2BWPQ%2C%20Shivam%20Nagar%2C%20Mohan%20Nagar%2C%20Jagatpura%2C%20Jaipur%2C%20Rajasthan%20302025!5e1!3m2!1sen!2sin!4v1748953012598!5m2!1sen!2sin"
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        
                 </div>
             </div>
         </div>

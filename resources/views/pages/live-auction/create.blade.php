@@ -112,7 +112,7 @@
                     </form>
                     <div class="form-poicy-area">
                         <p>By clicking the "create listing" button, you create a Auction Engine account, and you agree to
-                            Auction's <a href="#">Terms &amp; Conditions</a> &amp; <a href="#">Privacy Policy.</a></p>
+                            Auction Engine's <a href="#">Terms &amp; Conditions</a> &amp; <a href="#">Privacy Policy.</a></p>
                     </div>
                 </div>
             </div>

@@ -17,7 +17,7 @@
                         <img src="{{ asset('assets/images/icons/man.svg') }}" alt="empty" class="w-25">
                     </div>
                     <x-alert type="warning">
-                        <p class="text-center mb-0"><strong>Sorry!</strong> No ads found.</p>
+                        <p class="text-center mb-0"><strong>Sorry!</strong> No Auction found.</p>
                     </x-alert>
                 </div>
             @endforelse

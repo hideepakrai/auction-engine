@@ -38,7 +38,7 @@
                     </form>
                     <div class="form-poicy-area">
                         <p>By clicking the "report listing" button, you are reporting this listing as inappropriate. Please read
-                            Bazaar's <a href="#">Terms &amp; Conditions</a> &amp; <a href="#">Privacy Policy.</a></p>
+                            Auction Engine's <a href="#">Terms &amp; Conditions</a> &amp; <a href="#">Privacy Policy.</a></p>
                     </div>
                 </div>
             </div>
