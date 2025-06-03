@@ -1,5 +1,5 @@
 @extends('partials.app')
-@section('title', 'View Ad Listing - '.$ad->title)
+@section('title', 'View Auction Listing - '.$ad->title)
 @section('content')
 
 @include('layouts.breadcrumb', ['admin' => false, 'pageTitle' => 'View Ad Listing', 'hasBack' => true, 'backUrl' => route('user.ads'), 'backTitle' => 'Ads Listing', 'routeItem' => $ad->title])
@@ -32,7 +32,7 @@
                                     @foreach ($ad->media as $media)
                                     <div class="tab-pane big-image fade {{ $loop->index == 0 ? 'active show' : '' }}" id="gallery-img{{ $loop->index + 1 }}">
                                         <div class="auction-gallery-timer d-flex align-items-center justify-content-center">
-                                            <h3>Ad Images</h3>
+                                            <h3>Auction Images</h3>
                                         </div>
                                         <img alt="image" src="{{ $media->url }}" class="img-fluid">
                                     </div>

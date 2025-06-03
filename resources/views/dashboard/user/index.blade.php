@@ -22,7 +22,7 @@
                                         data-wow-delay=".2s"
                                         style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
                                         <div class="header">
-                                            <h5>Total Ads</h5>
+                                            <h5>Total Auction</h5>
                                         </div>
                                         <div class="body">
                                             <div class="counter-item">
@@ -109,7 +109,7 @@
                                         data-wow-delay=".2s"
                                         style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
                                         <div class="header">
-                                            <h5>Published Ads</h5>
+                                            <h5>Published Auction</h5>
                                         </div>
                                         <div class="body">
                                             <div class="counter-item">

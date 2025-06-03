@@ -29,10 +29,10 @@
         document.getElementById(identifier).value = new Date(newTime).toISOString().slice(0, 16);
     }
     document.getElementById('start_date').addEventListener('change', function () {
-        enforceAnHourInterval('start_date');
+        //enforceAnHourInterval('start_date');
     });
     document.getElementById('end_date').addEventListener('change', function () {
-        enforceAnHourInterval('end_date');
+        //enforceAnHourInterval('end_date');
     });
 </script>
 @endpush

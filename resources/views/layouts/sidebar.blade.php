@@ -32,12 +32,24 @@
              <span class="side-menu__label">Users</span>
           </a>
           </li>
+          <li class="slide">
+            <a  @class(['side-menu__item', 'has-link', 'active' => preg_match('/auctiontype.*/', $active)]) data-bs-toggle="slide" href="{{  route('admin.auctiontype.index')}}">
+             <i class="side-menu__icon fa-regular fa-users"></i>
+             <span class="side-menu__label">Auction Type</span>
+          </a>
+          </li>
+          <li class="slide">
+            <a  @class(['side-menu__item', 'has-link', 'active' => preg_match('/category.*/', $active)]) data-bs-toggle="slide" href="{{  route('admin.category.index')}}">
+             <i class="side-menu__icon fa-regular fa-users"></i>
+             <span class="side-menu__label">Category</span>
+          </a>
+          </li>
          <li class="sub-category">
-           <h3>Ads</h3>
+           <h3>Auctions</h3>
          </li>
          <li @class(['slide', 'is-expanded' => preg_match('/ads.*/', $active)])>
            <a @class(['side-menu__item', 'has-link', 'active' => preg_match('/ads.*/', $active)]) data-bs-toggle="slide" href="javascript:void(0)"><i
-               class="side-menu__icon fa-regular fa-cube"></i><span class="side-menu__label">Ads</span><i
+               class="side-menu__icon fa-regular fa-cube"></i><span class="side-menu__label">Auctions</span><i
                class="fa-light fa-chevron-right fa-2xs"></i>
            </a>
            <ul @class(['slide-menu', 'open' => preg_match('/ads.*/', $active)])>
@@ -220,7 +232,7 @@
        <a href="{{ route('user.ads') }}" @class(['nav-link', 'nav-btn-style', 'mx-auto', 'mb-20', 'active' => $active === 'ads'])>
          <i class="lar la-list-alt"></i>
          <svg fill="none" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><g><path d="m17.6201 9.62012h-5.25c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h5.25c.41 0 .75.34.75.75s-.33.75-.75.75z"/><path d="m7.11957 10.3801c-.19 0-.38-.07-.53-.22l-.75-.75003c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l.22.22 1.72-1.72c.29-.29.77-.29 1.06 0 .29003.29.29003.77 0 1.06l-2.25 2.25003c-.14.14-.33.22-.53.22z"/><path d="m17.6201 16.6201h-5.25c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h5.25c.41 0 .75.34.75.75s-.33.75-.75.75z"/><path d="m7.11957 17.3801c-.19 0-.38-.07-.53-.22l-.75-.75c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l.22.22 1.72-1.72c.29-.29.77-.29 1.06 0 .29003.29.29003.77 0 1.06l-2.25 2.25c-.14.14-.33.22-.53.22z"/><path d="m15 22.75h-6c-5.43 0-7.75-2.32-7.75-7.75v-6c0-5.43 2.32-7.75 7.75-7.75h6c5.43 0 7.75 2.32 7.75 7.75v6c0 5.43-2.32 7.75-7.75 7.75zm-6-20c-4.61 0-6.25 1.64-6.25 6.25v6c0 4.61 1.64 6.25 6.25 6.25h6c4.61 0 6.25-1.64 6.25-6.25v-6c0-4.61-1.64-6.25-6.25-6.25z"/></g></svg>
-         Ads Listing
+         Auction Listing
       </a>
        <a href="{{ route('user.listing-bids') }}" @class(['nav-link', 'nav-btn-style', 'mx-auto', 'mb-20', 'active' => $active === 'bidding'])>
           <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">

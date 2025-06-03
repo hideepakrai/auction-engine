@@ -29,6 +29,7 @@ class Ad extends Model
         'title',
         'description',
         'price',
+        'quantity',
         'is_negotiable',
         'video_url',
         'seller_name',
@@ -43,6 +44,7 @@ class Ad extends Model
         'country_id',
         'state_id',
         'city_id',
+        'address',
     ];
 
     /**

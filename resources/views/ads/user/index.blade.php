@@ -11,7 +11,7 @@
             <div class="col-lg-9">
                 <div class="tab-pane">
                     <div class="table-title-area">
-                       <h3>Ads Listing</h3>
+                       <h3>Auction Listing</h3>
                        <form class="d-flex align-items-center">
                        <select name="status">
                         <option value=""> Show: All Listing (Filter)</option>
@@ -30,7 +30,7 @@
                           <thead>
                              <tr>
                                 <th>Image</th>
-                                <th>Ads Title</th>
+                                <th>Auction Title</th>
                                 <th>Starting Price</th>
                                 <th>Timeframe</th>
                                 <th>Status</th>
@@ -61,7 +61,7 @@
                             <img src="{{ asset('assets/images/icons/man.svg') }}" alt="empty" class="w-25">
                         </div>
                         <x-alert type="dark">
-                            <p class="text-center mb-0"><strong>Sorry!</strong> You have no ads listing currently. To add a listing, click <a href="{{ route('add-listing') }}" class="fw-bold">here</a>.</p>
+                            <p class="text-center mb-0"><strong>Sorry!</strong> You have no auction listing currently. To add a listing, click <a href="{{ route('add-listing') }}" class="fw-bold">here</a>.</p>
                         </x-alert>
                     </div>
                     @endif

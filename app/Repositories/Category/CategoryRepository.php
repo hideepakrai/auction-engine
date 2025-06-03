@@ -6,7 +6,7 @@ use App\Abstracts\BaseCrudRepository;
 use App\Contracts\Repositories\CategoryRepositoryInterface;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Collection;
-
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 class CategoryRepository extends BaseCrudRepository implements CategoryRepositoryInterface
 {
     /**
@@ -56,4 +56,78 @@ class CategoryRepository extends BaseCrudRepository implements CategoryRepositor
             throw new \Exception('Category not found.');
         });
     }
+
+     /**
+     * Get users for admin
+     * 
+     * @param int $limit
+     * @param array $filters
+     * @return \App\Models\Category
+     */
+    public function getCategoriesForAdmin(int $limit = 10, array $filters = []): LengthAwarePaginator
+    {
+        return $this->model->query()->orderBy('created_at', 'desc')
+            ->paginate($limit);
+    }
+
+    /**
+     * Get user for admin
+     * 
+     * @param string $id
+     * @return \App\Models\User
+     */
+    public function getCategoryForAdmin(string $id): \App\Models\Category
+    {
+        return $this->model->query()->where('id', $id)->firstOr(function () {
+            throw new \Exception('Category not found.');
+        });
+    }
+
+    /**
+     * Get user for profile
+     * 
+     * @param array $data
+     * @return void
+     */
+    public function createCategory($data): void
+    {
+       
+        $this->model->query()->create([
+            'name' => $data['name'],
+            
+        ]);
+    }
+
+    
+    /**
+     * 
+     * Update user
+     * 
+     * @param string $id
+     * @param array $data
+     * @return void
+     */
+    public function updateCategory(string $id, array $data): void
+    {
+        $category = $this->model->query()->where('id', $id)->firstOr(function () {
+            throw new \Exception('Category not found.');
+        });
+
+        $category->update([
+            'name' => $data['first_name'],
+            
+        ]);
+    }
+
+    /**
+     * Delete a user
+     * 
+     * @param string $id
+     * @return void
+     */
+    public function deleteCategory(string $id): void
+    {
+        $this->model->query()->where('id', $id)->delete();
+    }
+
 }

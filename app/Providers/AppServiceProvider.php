@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -55,6 +56,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Image::configure([
+            'driver' => 'gd'
+        ]);
         if (!app()->environment('local')) {
             User::observe(UserObserver::class);
             Ad::observe(AdObserver::class);

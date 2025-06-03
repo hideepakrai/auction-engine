@@ -15,6 +15,8 @@ use App\Http\Controllers\Admin\Profile\ProfileController;
 use App\Http\Controllers\Admin\Search\SearchController;
 use App\Http\Controllers\Admin\Support\SupportController;
 use App\Http\Controllers\Admin\User\UserController;
+use App\Http\Controllers\Admin\AuctionType\AuctionTypeController;
+use App\Http\Controllers\Admin\Category\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -52,6 +54,13 @@ Route::middleware(['auth:admin_web', 'ensure.account.active'])->group(function (
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::put('/profile/change-password', [ProfileController::class, 'changePassword'])->name('profile.change-password.handle');
+
+    /* ========  AuctionType  =========== */
+    Route::resource('auctiontype', AuctionTypeController::class);
+
+    /* ========  Category  =========== */
+    Route::resource('category', CategoryController::class);
+    
 
     /* ========  USER  =========== */
     Route::resource('users', UserController::class);

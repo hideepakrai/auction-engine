@@ -8,7 +8,7 @@
 <div class="pt-120 pb-120">
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10">
+            <div class="col-xl-12 col-lg-12 col-md-12">
                 <div class="form-wrapper wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s"
                     style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInUp;">
                     @guest('web')
@@ -28,38 +28,40 @@
                                 <h4>Lisiting Information</h4>
                             </div>
                             <div class="col-md-12">
-                                <x-input-field name="title" type="text" label="Ad Title" placeholder="Enter Ad Title" value="{{ old('title') }}" />
+                                <x-input-field name="title" type="text" label="Auction Title" placeholder="Enter Auction Title" value="{{ old('title') }}" />
                             </div>
                             <div class="col-md-12">
-                                <x-textarea-field name="description" label="Ad Description"
+                                <x-textarea-field name="description" label="Auction Description"
                                     placeholder="Enter Description" value="{{ old('description') }}" :admin="false" />
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <x-input-field name="price" type="number" label="Starting Price"
                                     placeholder="Enter Starting Price" value="{{ old('price') }}" />
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-6">
+                                <x-input-field name="quantity" type="number" label="Quantity"
+                                    placeholder="Enter Quantity" value="{{ old('quantity') }}" />
+                            </div>
+                            <div class="col-md-6">
                                 <x-input-field name="start_date" type="datetime-local" label="Start Date"
                                     placeholder="Enter Start Date" value="{{ old('start_date') }}" />
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <x-input-field name="end_date" type="datetime-local" label="End Date"
                                     placeholder="Enter End Date" value="{{ old('end_date') }}" />
                             </div>
-                            <div class="form-section">
-                                <h4>Category</h4>
+                            <div class="row">
+                                <x-category-selectable :admin="false" />
                             </div>
-                            <x-category-selectable :admin="false" />
-                            <div class="form-section">
-                                <h4>Images</h4>
-                            </div>
-                            <div class="col-md-12">
-                                <x-input-field name="images[]" type="file" label="Upload Image"
-                                    placeholder="Upload Image" />
-                            </div>
-                            <div class="col-md-12">
-                                <x-input-field name="images[]" type="file" label="Upload Image"
-                                    placeholder="Upload Image" />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <x-input-field name="images[]" type="file" label="Upload Image"
+                                        placeholder="Upload Image" />
+                                </div>
+                                <div class="col-md-6">
+                                    <x-input-field name="images[]" type="file" label="Upload Image"
+                                        placeholder="Upload Image" />
+                                </div>
                             </div>
                             {{-- add more images button --}}
                             <div class="col-md-12">
@@ -79,6 +81,10 @@
                                 <h4>Location</h4>
                             </div>
                             <x-countries-selectable :admin="false"/>
+                            <div class="col-md-6">
+                                <x-input-field name="address" type="text" label="Address"
+                                    placeholder="Enter Address" value="{{old('address') }}" />
+                            </div>
                             <div class="form-section">
                                 <h4>Seller Information</h4>
                             </div>
@@ -105,8 +111,8 @@
                         <button class="account-btn">Create Listing</button>
                     </form>
                     <div class="form-poicy-area">
-                        <p>By clicking the "create listing" button, you create a Bazaar account, and you agree to
-                            Bazaar's <a href="#">Terms &amp; Conditions</a> &amp; <a href="#">Privacy Policy.</a></p>
+                        <p>By clicking the "create listing" button, you create a Auction Engine account, and you agree to
+                            Auction's <a href="#">Terms &amp; Conditions</a> &amp; <a href="#">Privacy Policy.</a></p>
                     </div>
                 </div>
             </div>
@@ -122,7 +128,7 @@
 <script>
     // Create a new input field for images
     function createNewInputField() {
-        return `<div class="col-md-12">
+        return `<div class="col-md-6">
                     <x-input-field name="images[]" type="file" label="Upload Image" placeholder="Upload Image" />
                 </div>`;
     }

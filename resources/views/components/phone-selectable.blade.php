@@ -9,12 +9,15 @@
         <div class="phone-select">
             <ul class="phone-select-list">
                 @foreach ($countries as $country)
-                <li class="phone-select-list-item" data-dial-code="{{ $country->phone_code }}"
-                    data-country-code="{{ $country->iso2 }}">
+                <li class="phone-select-list-item {{ $country->iso2 == 'IN' ? 'selected' : '' }}"
+                    data-dial-code="{{ $country->phone_code }}"
+                    data-country-code="{{ $country->iso2 }} {{ $country->iso2 == 'IN' ? 'selected' : '' }}">
+                    
                     <span class="phone-select-list-item-label">{{ $country->emoji }} {{ $country->name }}</span>
                     <span class="phone-select-list-item-dial-code">( +{{ $country->phone_code }} )</span>
-                </li>
+                </li>  
                 @endforeach
+                
             </ul>
         </div>
     </div>

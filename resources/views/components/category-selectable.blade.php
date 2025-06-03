@@ -46,6 +46,7 @@
 @endpush
 @else
 <div class="col-md-6">
+    <label class="col-md-6 form-label">Category *</label>
     <select name="category" id="category" @class(['error' => $errors->has('category')])>
         <option value="">Select Category</option>
         @foreach ($categories as $category)
@@ -55,6 +56,7 @@
     <span class="text-danger fs-6">{{ $errors->first('category') }}</span>
 </div>
 <div class="col-md-6">
+    <label class="col-md-6 form-label">SubCategory *</label>
     <select name="subcategory" id="subcategory" @class(['error' => $errors->has('subcategory')])>
         <option value="">Select Subcategory</option>
     </select>

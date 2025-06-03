@@ -23,6 +23,8 @@ use App\Contracts\Repositories\PostRepositoryInterface;
 use App\Contracts\Repositories\SupportRepositoryInterface;
 use App\Contracts\Repositories\TagRepositoryInterface;
 use App\Contracts\Repositories\UserRepositoryInterface;
+use App\Contracts\Repositories\AuctionTypeRepositoryInterface;
+use App\Repositories\AuctionType\AuctionTypeRepository;
 use App\Repositories\Ad\Admin\AdminAdRepository;
 use App\Repositories\Auth\AuthenticateRepository;
 use App\Repositories\Category\CategoryRepository;
@@ -158,6 +160,11 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(
             AdminPayoutRepositoryInterface::class,
             AdminPayoutRepository::class
+        );
+
+        $this->app->bind(
+            AuctionTypeRepositoryInterface::class,
+            AuctionTypeRepository::class
         );
     }
 }

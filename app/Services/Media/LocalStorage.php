@@ -26,10 +26,10 @@ public function __construct()
      */
     protected function resizeImage(UploadedFile $file, string $directory, int $width, int $height): void
     {
-        $image = Image::make($file->path());
+       /* $image = Image::make($file->path());
         $directory = preg_replace('/^public/', '', $directory);
         $image->fit($width, $height, function ($constraint) {
             $constraint->upsize();
-        })->save('storage'.$directory.'/'.$file->hashName());
+        })->save('storage'.$directory.'/'.$file->hashName());*/
     }
 }

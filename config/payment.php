@@ -30,12 +30,12 @@ return [
     ],
 
     'currencies' => [
-        'default' => 'NGN',
+        'default' => 'INR',
 
-        'NGN' => [
-            'name' => 'Nigerian Naira',
-            'symbol' => '₦',
-            'code' => 'NGN',
+        'INR' => [
+            'name' => 'Indian Rupee',
+            'symbol' => '₹',
+            'code' => 'INR',            
         ],
         'USD' => [
             'name' => 'United States Dollar',

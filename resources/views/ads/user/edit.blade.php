@@ -1,8 +1,8 @@
 @extends('partials.app')
-@section('title', 'Edit Ad Listing - '.$ad->title)
+@section('title', 'Edit Auction Listing - '.$ad->title)
 @section('content')
 
-@include('layouts.breadcrumb', ['admin' => false, 'pageTitle' => 'Edit Ad Listing', 'hasBack' => true, 'backUrl' => route('user.ads'), 'backTitle' => 'Ads Listing', 'routeItem' => $ad->title])
+@include('layouts.breadcrumb', ['admin' => false, 'pageTitle' => 'Edit Auction Listing', 'hasBack' => true, 'backUrl' => route('user.ads'), 'backTitle' => 'Ads Listing', 'routeItem' => $ad->title])
 
 <div class="dashboard-section pt-120 pb-120">
     <div class="container">
@@ -20,7 +20,7 @@
                                     <h4>Edit Lisiting Information</h4>
                                 </div>
                                 <div class="col-md-12">
-                                    <x-input-field name="title" type="text" label="Ad Title" placeholder="Enter Ad Title" value="{{ $ad->title }}" />
+                                    <x-input-field name="title" type="text" label="Ad Title" placeholder="Enter Auction Title" value="{{ $ad->title }}" />
                                 </div>
                             <div class="col-md-12">
                                     <x-textarea-field name="description" label="Ad Description"

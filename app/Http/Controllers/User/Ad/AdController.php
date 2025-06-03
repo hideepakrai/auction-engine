@@ -55,8 +55,24 @@ class AdController extends Controller
      */
     public function store(CreateAdRequest $request): RedirectResponse
     {
-        $this->adRepository->create($this->authRepository->user(), $request->validated());
-        return redirect()->route('add-listing')->with('success', 'Your ad has been created successfully, it will be reviewed by our team before it is published.');
+        //$this->adRepository->create($this->authRepository->user(), $request->validated());
+       // return redirect()->route('add-listing')->with('success', 'Your auction has been created successfully, it will be reviewed by our team before it is published.');
+        $data = $request->validated();
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+
+            // Store file to 'public/ads' folder
+            $path = $file->store('public/ads');
+
+            // Optional: Save path without 'public/' prefix
+            $data['image_path'] = str_replace('public/', 'storage/', $path);
+        }
+
+        // Create the ad with the image path included
+        $this->adRepository->create($this->authRepository->user(), $data);
+
+        return redirect()->route('add-listing')->with('success', 'Your auction has been created successfully, it will be reviewed by our team before it is published.');
     }
 
     /**

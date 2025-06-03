@@ -215,6 +215,8 @@ class AdRepository extends BaseCrudRepository implements AdRepositoryInterface
             'title' => $data['title'],
             'description' => $data['description'],
             'price' => $data['price'],
+            'quantity' => $data['quantity'],
+            'address' => $data['address'],
             'video_url' => $data['video_url'] ?? null,
             'status' => AdStatus::PENDING,
             'started_at' => Carbon::parse($data['start_date'])->format('Y-m-d H:00:00'),

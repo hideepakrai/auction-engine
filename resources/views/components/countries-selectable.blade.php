@@ -26,20 +26,20 @@
     </div>
 </div>
 @else
-<div class="{{ $hasLabels ? 'col-xl-6 col-lg-12 col-md-6' : 'col-md-12' }}">
+<div class="{{ $hasLabels ? 'col-xl-6 col-lg-12 col-md-6' : 'col-md-6' }}">
     <div class="form-inner">
         <label>Country *</label>
         <select name="country" id="country">
             <option value="">Select Country</option>
             @foreach ($countries as $country)
-            <option value="{{ $country->iso2 }}"
+            <option value="{{ $country->iso2 }}" {{ $country->iso2 == 'IN' ? 'selected' : '' }}
                 >{{ $country->name }}</option>
             @endforeach
         </select>
         <span class="text-danger fs-6">{{ $errors->first('country') }}</span>
     </div>
 </div>
-<div class="{{ $hasLabels ? 'col-xl-6 col-lg-12 col-md-6' : 'col-md-12' }}">
+<div class="{{ $hasLabels ? 'col-xl-6 col-lg-12 col-md-6' : 'col-md-6' }}">
     <div class="form-inner">
         @if($hasLabels)
         <label>State *</label>
@@ -50,7 +50,7 @@
         <span class="text-danger fs-6">{{ $errors->first('state') }}</span>
     </div>
 </div>
-<div class="{{ $hasLabels ? 'col-xl-6 col-lg-12 col-md-6' : 'col-md-12' }}">
+<div class="{{ $hasLabels ? 'col-xl-6 col-lg-12 col-md-6' : 'col-md-6' }}">
     <div class="form-inner">
         @if($hasLabels)
         <label>City *</label>
@@ -114,4 +114,14 @@
         });
         $('#country').niceSelect('update');
 </script>
+<script>
+    $(document).ready(function () {
+        // Set default value for country
+        $('#country').val('IN').niceSelect('update');
+
+        // Optional: trigger change if you want to load states immediately
+        $('#country').trigger('change');
+    });
+</script>
+
 @endpush
