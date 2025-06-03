@@ -70,7 +70,7 @@
                                                                             </td>
                                                                             <td><span class="mt-sm-2 d-block"> {{ $user->email }}</span></td>
                                                                             <td><span class="mt-sm-2 d-block"> {{ $user->mobile }}</span></td>
-                                                                            <td><span class="mt-sm-2 d-block"> {{ $user->country->emoji }} {{ $user->country->name }}</span></td>
+                                                                            <td><span class="mt-sm-2 d-block"> India</span></td>
                                                                             <td>
                                                                                 <div class="d-flex">
                                                                                     <span class="badge bg-{{ $user->is_active ? 'success' : 'danger' }} me-2">{{ $user->is_active ? 'Active' : 'Inactive' }}</span>
